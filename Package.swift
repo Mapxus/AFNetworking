@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.4
 //
 //  Package.swift
 //
@@ -25,13 +25,29 @@
 
 import PackageDescription
 
-let package = Package(name: "AFNetworking",
-                      platforms: [.macOS(.v10_10),
-                                  .iOS(.v9),
-                                  .tvOS(.v9),
-                                  .watchOS(.v2)],
-                      products: [.library(name: "AFNetworking",
-                                          targets: ["AFNetworking"])],
-                      targets: [.target(name: "AFNetworking",
-                                        path: "AFNetworking",
-                                        publicHeadersPath: "")])
+let package = Package(
+  name: "AFNetworking",
+  platforms: [
+    .macOS(.v10_10),
+    .iOS(.v9),
+    .tvOS(.v9),
+    .watchOS(.v2)
+  ],
+  products: [
+    .library(
+      name: "AFNetworking",
+      type: .dynamic,
+      targets: ["AFNetworking"]
+    )
+  ],
+  targets: [
+    .target(
+      name: "AFNetworking",
+      path: "AFNetworking",
+      resources: [
+        .process("PrivacyInfo.xcprivacy")
+      ],
+      publicHeadersPath: ""
+    )
+  ]
+)
