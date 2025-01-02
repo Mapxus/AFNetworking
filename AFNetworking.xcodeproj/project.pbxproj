@@ -1150,6 +1150,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1176,6 +1177,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1482,6 +1484,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1509,6 +1512,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1534,6 +1538,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AFNetworking-watchOS";
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1560,6 +1565,7 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AFNetworking-watchOS";
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1588,6 +1594,8 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1615,6 +1623,8 @@
 				INFOPLIST_FILE = ./Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 4.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PROVISIONING_PROFILE_SPECIFIER = "";

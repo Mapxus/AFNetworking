@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AFNetworking'
-  s.version  = '4.0.2'
+  s.version  = '4.0.3'
   s.license  = 'MIT'
   s.summary  = 'A delightful networking framework for Apple platforms.'
   s.homepage = 'https://github.com/Mapxus/AFNetworking'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/Mapxus/AFNetworking.git', :tag => s.version }
 
   s.ios.deployment_target = '9.0'
-  s.osx.deployment_target = '10.10'
+  s.osx.deployment_target = '10.11'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '9.0'
-    ss.osx.deployment_target = '10.10'
+    ss.osx.deployment_target = '10.11'
     ss.tvos.deployment_target = '9.0'
 
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
