@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AFNetworking'
-  s.version  = '4.0.3'
+  s.version  = '4.0.4'
   s.license  = 'MIT'
   s.summary  = 'A delightful networking framework for Apple platforms.'
   s.homepage = 'https://github.com/Mapxus/AFNetworking'
@@ -18,15 +18,19 @@ Pod::Spec.new do |s|
   s.tvos.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.alamofire.AFNetworking' }
 
   s.source_files = 'AFNetworking/AFNetworking.h'
-  
-  s.resource_bundles = { 'AFNetworking' => 'AFNetworking/*.xcprivacy' }
+
+  s.subspec 'PrivacyResources' do |ss|
+    ss.resource_bundles = { 'AFNetworking' => 'AFNetworking/*.xcprivacy' }
+  end
 
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
+    ss.dependency 'AFNetworking/PrivacyResources'
   end
 
   s.subspec 'Security' do |ss|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
+    ss.dependency 'AFNetworking/PrivacyResources'
   end
 
   s.subspec 'Reachability' do |ss|
@@ -35,6 +39,7 @@ Pod::Spec.new do |s|
     ss.tvos.deployment_target = '9.0'
 
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
+    ss.dependency 'AFNetworking/PrivacyResources'
   end
 
   s.subspec 'NSURLSession' do |ss|
